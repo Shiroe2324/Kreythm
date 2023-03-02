@@ -3,10 +3,11 @@ class Ping {
     static aliases = ['pong']; // los aliases del comando
 
     // constructor cuando se inicializa el comando
-    constructor(msg, args, utils) {
+    constructor(msg, args, utils, discord) {
         this.msg = msg; // el mensaje que envió el usuario
         this.args = args; // los argumentos del mensaje
         this.utils = utils; // las funciones de ayuda
+        this.discord = discord; // la libreria de discordjs
     }
 
     // función de ejecución del comando

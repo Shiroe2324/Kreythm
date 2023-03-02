@@ -1,7 +1,8 @@
 require('dotenv').config(); // variables de entorno
 
 // inicio del bot
-const { Client, Events, ChannelType, Collection } = require('discord.js'); // discord.js
+const Discord = require('discord.js'); // discord.js
+const { Client, Events, ChannelType, Collection } = Discord; // métodos de discors.js
 const client = new Client({ intents: 3276799 }); // cliente de discord
 const prefix = process.env.PREFIX; // variable de entorno del prefix del bot
 const handler = require('./handler'); // archivo con la función handler del bot
@@ -28,10 +29,8 @@ client.on(Events.MessageCreate, (msg) => {
 	// se busca en la colección de comandos el nombre del comando por medio del propio nombre o de algún alias
 	const searchCommand = msg.client.commands.get(commandName) || msg.client.commands.find((cmd) => cmd.aliases.includes(commandName));
 	if (!searchCommand) return; // retorna si no encuentra ningún comando con ese nombre o alias
-
-	console.log(searchCommand.name)
-	const command = new searchCommand(msg, args, utils); // se inicializa el comando encontrado
-	console.log(command.name)
+    
+	const command = new searchCommand(msg, args, utils, Discord); // se inicializa el comando encontrado
 
 	// se ejecuta el comando y si encuentra algún error lo lanza
 	command.execute().catch(error => {
