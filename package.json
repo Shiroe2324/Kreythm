@@ -4,7 +4,9 @@
   "description": "A discord bot with scorblex",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node registerSlashCommands.js && node index.js",
+    "test": "node index.js",
+    "refresh": "node registerSlashCommands.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
     "async"
   ],
   "author": "Shiroe2324",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Shiroe2324/Kreythm/issues"
   },

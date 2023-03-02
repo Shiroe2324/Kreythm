@@ -18,3 +18,6 @@ $npm install --save
 
 $npm start
 ```
+
+### Datos extra
+si quieres iniciar el bot sin que se registren los slash commands utiliza el comando `npm test`, y si quieres solamente registrar/refrescar los slash commands utiliza el comando `npm run refresh`.
