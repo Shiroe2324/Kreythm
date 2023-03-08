@@ -1,31 +1,31 @@
 {
-  "name": "kreythm",
-  "version": "1.0.0",
-  "description": "A discord bot with scorblex",
-  "main": "index.js",
-  "scripts": {
-    "start": "node registerSlashCommands.js && node index.js",
-    "test": "node index.js",
-    "refresh": "node registerSlashCommands.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Shiroe2324/Kreythm.git"
-  },
-  "keywords": [
-    "discord",
-    "bot",
-    "async"
-  ],
-  "author": "Shiroe2324",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Shiroe2324/Kreythm/issues"
-  },
-  "homepage": "https://github.com/Shiroe2324/Kreythm#readme",
-  "dependencies": {
-    "discord.js": "^14.7.1",
-    "dotenv": "^16.0.3",
-    "superagent": "^8.0.9"
-  }
+	"name": "kreythm",
+	"version": "1.0.0",
+	"description": "A discord bot with scorblex",
+	"main": "index.js",
+	"scripts": {
+		"start": "node registerSlashCommands.js && node index.js",
+		"test": "node index.js",
+		"refresh": "node registerSlashCommands.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Shiroe2324/Kreythm.git"
+	},
+	"keywords": [
+		"discord",
+		"bot",
+		"async"
+	],
+	"author": "Shiroe2324",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Shiroe2324/Kreythm/issues"
+	},
+	"homepage": "https://github.com/Shiroe2324/Kreythm#readme",
+	"dependencies": {
+		"discord.js": "^14.7.1",
+		"dotenv": "^16.0.3",
+		"superagent": "^8.0.9"
+	}
 }

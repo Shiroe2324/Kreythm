@@ -22,4 +22,4 @@ $npm start
 ### Datos extra
 si quieres iniciar el bot sin que se registren los slash commands utiliza el comando `npm test`, y si quieres solamente registrar/refrescar los slash commands utiliza el comando `npm run refresh`.
 
-en el archivo `package.json` en la propiedad `name` puede cambiarla a su gusto.
+en el archivo `package.json` y `package-lock.json` la propiedad `name` puede cambiarla a su gusto.

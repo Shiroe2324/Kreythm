@@ -10,7 +10,10 @@ class Ping {
     }
 
     async execute () {
-        return await this.message.reply('pong!'); // se envia un mensaje que contiene 'pong!'
+        const date = Date.now();
+        const message = await this.message.channel.send('calculando...');
+
+        return message.edit(`El ping actualmente es de: **${Date.now() - date}ms**`);
     }
 }
 
