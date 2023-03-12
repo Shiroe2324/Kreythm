@@ -1,6 +1,6 @@
 {
 	"name": "kreythm",
-	"version": "1.0.0",
+	"version": "0.3.2",
 	"description": "A discord bot with scorblex",
 	"main": "index.js",
 	"scripts": {
@@ -26,6 +26,11 @@
 	"dependencies": {
 		"discord.js": "^14.7.1",
 		"dotenv": "^16.0.3",
+		"moment": "^2.29.4",
+		"mongoose": "^7.0.1",
 		"superagent": "^8.0.9"
+	},
+	"devDependencies": {
+		"standard": "^17.0.0"
 	}
 }

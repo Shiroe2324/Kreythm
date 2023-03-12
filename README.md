@@ -19,7 +19,9 @@ $npm install --save
 $npm start
 ```
 
-### Datos extra
+# Datos extra
 si quieres iniciar el bot sin que se registren los slash commands utiliza el comando `npm test`, y si quieres solamente registrar/refrescar los slash commands utiliza el comando `npm run refresh`.
 
 en el archivo `package.json` y `package-lock.json` la propiedad `name` puede cambiarla a su gusto.
+
+en visual studio code puedes instalar la extensión de StandardJS presionando `ctrl + P` y seguido de esto ejecutar el comando `ext install standard.vscode-standard`, esto instalará extandar en conjunto a la devDependency de standard, esta extensión formateará los archivos javascript a un formato estandar. Para una mejor visualización le recomiendo instalar la dependencia `Error Lens`, esto se puede hacer con el comando `ctrl + P` y ejecutando `ext install usernamehw.errorlens`.

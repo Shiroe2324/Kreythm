@@ -1,20 +1,29 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require('discord.js')
 
 class Ping {
-    static data = new SlashCommandBuilder()
-        .setName('ping')
-        .setDescription('comando de pruebas')
-        .setDMPermission(false)
+  static data = new SlashCommandBuilder()
+    .setName('ping')
+    .setDescription('comando de pruebas')
+    .setDMPermission(false)
 
-    constructor(interaction, utils, discord) {
-        this.interaction = interaction;
-        this.utils = utils;
-        this.discord = discord;
-    }
+  constructor (interaction, utils, discord, moment) {
+    this.interaction = interaction
+    this.utils = utils
+    this.discord = discord
+    this.moment = moment
+  }
 
-    async execute() {
-        this.interaction.reply('pong!') // se envia un mensaje que contiene 'pong!'
-    }
+  information = {
+    name: 'ping',
+    description: 'Comando de Pruebas',
+    cooldown: 0,
+    category: 'utiles',
+    usage: '</ping:1080957130938523648>'
+  }
+
+  async execute () {
+    this.interaction.reply('pong!') // se envia un mensaje que contiene 'pong!'
+  }
 }
 
-module.exports = Ping;
+module.exports = Ping
