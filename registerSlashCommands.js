@@ -30,6 +30,7 @@ for (const slashCommandsCategoryPath of slashCommandsPath) {
     )
 
     console.log(`Se actualizaron ${data.length} slash commands (/) ✔️`)
+    process.exit()
   } catch (error) {
     console.error(error) // si hay error lo lanza
   }

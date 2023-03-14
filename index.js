@@ -57,7 +57,7 @@ client.on(Events.InteractionCreate, (interaction) => {
     // se ejecuta el comando y si encuentra algún error lo lanza
     command.execute().catch(error => {
       console.error(error)
-      interaction.reply({ content: `Ocurrió un error al ejecutar el comando: **__${error}__**`, ephemeral: true })
+      interaction.fetchReply({ content: `Ocurrió un error al ejecutar el comando: **__${error}__**`, ephemeral: true })
     })
   }
 })

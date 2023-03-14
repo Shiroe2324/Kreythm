@@ -112,7 +112,7 @@ class OsuSet {
       const mode = this.interaction.options.getString('mode')
       const DiscordUserDB = await schemas.OsuUser.findOne({ discordID: this.interaction.user.id })
 
-      if (!DiscordUserDB) return this.interaction.reply({ content: 'No tienes tu cuenta vinculada, primero tienes que vincularla con el comando </osuset user:1084282864033599518>', ephemeral: true })
+      if (!DiscordUserDB) return this.interaction.reply({ content: 'No tienes tu cuenta vinculada, primero tienes que vincularla con el comando </osu_set user:1084323278304333834>', ephemeral: true })
 
       if (mode === DiscordUserDB.defaultMode) return this.interaction.reply({ content: 'Ya tienes ese modo de juego vinculado!', ephemeral: true })
 

@@ -28,6 +28,7 @@
 		"dotenv": "^16.0.3",
 		"moment": "^2.29.4",
 		"mongoose": "^7.0.1",
+		"openai": "^3.2.1",
 		"superagent": "^8.0.9"
 	},
 	"devDependencies": {

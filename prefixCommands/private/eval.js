@@ -22,7 +22,7 @@ class Eval {
     description: 'Ejecuta el codigo ingresado',
     cooldown: 0,
     category: 'privados',
-    usage: 'ping',
+    usage: 'eval [codigo]',
     private: true
   }
 
